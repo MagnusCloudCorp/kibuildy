@@ -1,9 +1,12 @@
 {
     "name": "@kibuildy/utils",
-    "version": "0.0.6-alpha.5",
+    "version": "0.0.7",
     "description": "utils for cli building",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
+    "publishConfig": {
+        "access": "public"
+    },
     "watch": {
         "test": {
             "patterns": [
@@ -19,7 +22,7 @@
         "test": "node ../../tests.js",
         "build": "tsc -p tsconfig.json",
         "pretest": "npm run build",
-        "prepublish": "npm run build"
+        "prepare": "npm run build"
     },
     "author": "Salim Benabbou <benabbousalim@gmail.com>",
     "license": "ISC",
