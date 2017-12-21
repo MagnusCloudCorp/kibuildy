@@ -13,9 +13,6 @@
         "next-version": "lerna publish --skip-git --skip-npm --conventional-commits",
         "deploy": "lerna publish  --yes --skip-git"
     },
-    "publishConfig": {
-        "registry": "http://verdaccio.magnus-ci.duckdns.org/"
-    },
     "repository": {
         "type": "git",
         "url": "git+ssh://git@gitlab.com/mg-home/kibuildy.git"
@@ -23,9 +20,9 @@
     "author": "Salim Benabbou <benabbousalim@gmail.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://gitlab.com/mg-home/kibuildy/issues"
+        "url": "https://github.com/MagnusCloudCorp/kibuildy/issues"
     },
-    "homepage": "https://gitlab.com/mg-home/kibuildy#README",
+    "homepage": "https://github.com/MagnusCloudCorp/kibuildy#README",
     "devDependencies": {
         "@types/chai": "^4.0.4",
         "@types/fs-extra": "^4.0.2",
