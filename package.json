@@ -1,0 +1,55 @@
+{
+    "name": "kibuildy",
+    "version": "0.0.1-alpha.2",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "postinstall": "lerna bootstrap",
+        "build": "lerna run build --concurrency=1",
+        "tdd": "lerna run watch --parallel --concurrency=1",
+        "test": "lerna run test --concurrency=1",
+        "publish-develop": "lerna publish --npm-tag=develop  --yes --skip-git",
+        "next-canary": "lerna publish --skip-git --skip-npm --conventional-commits --canary",
+        "next-version": "lerna publish --skip-git --skip-npm --conventional-commits",
+        "deploy": "lerna publish  --yes --skip-git"
+    },
+    "publishConfig": {
+        "registry": "http://verdaccio.magnus-ci.duckdns.org/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@gitlab.com/mg-home/kibuildy.git"
+    },
+    "author": "Salim Benabbou <benabbousalim@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/mg-home/kibuildy/issues"
+    },
+    "homepage": "https://gitlab.com/mg-home/kibuildy#README",
+    "devDependencies": {
+        "@types/chai": "^4.0.4",
+        "@types/fs-extra": "^4.0.2",
+        "@types/glob": "^5.0.32",
+        "@types/mocha": "^2.2.43",
+        "@types/node": "^8.0.29",
+        "@types/rimraf": "^2.0.2",
+        "@types/inquirer": "0.0.35",
+        "@types/yargs": "^8.0.2",
+        "chai": "^4.1.2",
+        "lerna": "^2.2.0",
+        "mocha": "^3.5.3",
+        "nodemon": "^1.12.1",
+        "npm-watch": "^0.2.0",
+        "reflect-metadata": "^0.1.10",
+        "typescript": "^2.5.2",
+        "@types/chai-as-promised": "^7.1.0",
+        "chai-as-promised": "^7.1.1",
+        "cz-lerna-changelog": "^1.2.1"
+    },
+    "dependencies": {},
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-lerna-changelog"
+        }
+    }
+}

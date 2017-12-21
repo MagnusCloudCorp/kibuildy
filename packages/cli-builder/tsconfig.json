@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "es6",
+            "es2015",
+            "dom"
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "outDir": "./dist",
+        "sourceRoot": "src",
+        "target": "es5",
+        "stripInternal": false,
+        "baseUrl": "",
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "typeRoots": [
+            "../../node_modules/@types"
+        ]
+    }
+}

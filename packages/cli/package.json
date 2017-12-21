@@ -1,0 +1,33 @@
+{
+    "name": "@kibuildy/command-loader",
+    "version": "0.0.6-alpha.5",
+    "description": "utils for cli building",
+    "bin": {
+        "kibuildy": "./.bin/cli.js"
+    },
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "watch": {
+        "test": {
+            "patterns": [
+                "src",
+                "test"
+            ],
+            "extensions": "ts",
+            "quiet": false
+        }
+    },
+    "scripts": {
+        "watch": "npm-watch",
+        "test": "node ../../tests.js",
+        "build": "tsc -p tsconfig.json",
+        "pretest": "npm run build",
+        "prepublish": "npm run build"
+    },
+    "author": "Salim Benabbou <benabbousalim@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "@kibuildy/cli-builder": "^0.0.6-alpha.5",
+        "@kibuildy/utils": "^0.0.6-alpha.5"
+    }
+}

@@ -1,0 +1,7 @@
+src/**
+test/**
+tsconfig.json
+dist/test/**
+*.log
+index.ts
+testrc.json
